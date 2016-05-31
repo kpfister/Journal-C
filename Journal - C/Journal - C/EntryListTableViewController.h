@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EntryListTableViewController : UITableViewController
+// For this app, this is complete.
+
 
 @end

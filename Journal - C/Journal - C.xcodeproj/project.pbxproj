@@ -14,6 +14,8 @@
 		750BC41D1CFE2B9C00B9E53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BC41B1CFE2B9C00B9E53C /* LaunchScreen.storyboard */; };
 		750BC4261CFE2CBF00B9E53C /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC4251CFE2CBF00B9E53C /* Entry.m */; };
 		750BC42A1CFE323000B9E53C /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC4291CFE323000B9E53C /* EntryController.m */; };
+		750BC42E1CFE3EA400B9E53C /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC42D1CFE3EA400B9E53C /* EntryListTableViewController.m */; };
+		750BC4321CFE485600B9E53C /* EntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC4311CFE485600B9E53C /* EntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		750BC4251CFE2CBF00B9E53C /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		750BC4281CFE323000B9E53C /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		750BC4291CFE323000B9E53C /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		750BC42C1CFE3EA400B9E53C /* EntryListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		750BC42D1CFE3EA400B9E53C /* EntryListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
+		750BC4301CFE485600B9E53C /* EntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryDetailViewController.h; sourceTree = "<group>"; };
+		750BC4311CFE485600B9E53C /* EntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 				750BC4101CFE2B9C00B9E53C /* AppDelegate.h */,
 				750BC4111CFE2B9C00B9E53C /* AppDelegate.m */,
 				750BC4161CFE2B9C00B9E53C /* Main.storyboard */,
+				750BC42F1CFE3EB900B9E53C /* View Controllers */,
 				750BC4271CFE2CC300B9E53C /* Model */,
 				750BC4191CFE2B9C00B9E53C /* Assets.xcassets */,
 				750BC41B1CFE2B9C00B9E53C /* LaunchScreen.storyboard */,
@@ -98,6 +105,17 @@
 				750BC4291CFE323000B9E53C /* EntryController.m */,
 			);
 			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		750BC42F1CFE3EB900B9E53C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				750BC4301CFE485600B9E53C /* EntryDetailViewController.h */,
+				750BC4311CFE485600B9E53C /* EntryDetailViewController.m */,
+				750BC42C1CFE3EA400B9E53C /* EntryListTableViewController.h */,
+				750BC42D1CFE3EA400B9E53C /* EntryListTableViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,10 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750BC4321CFE485600B9E53C /* EntryDetailViewController.m in Sources */,
 				750BC4261CFE2CBF00B9E53C /* Entry.m in Sources */,
 				750BC4121CFE2B9C00B9E53C /* AppDelegate.m in Sources */,
 				750BC42A1CFE323000B9E53C /* EntryController.m in Sources */,
 				750BC40F1CFE2B9C00B9E53C /* main.m in Sources */,
+				750BC42E1CFE3EA400B9E53C /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,21 +39,6 @@
 {
     [self.entries removeObject:entry];
 }
-/*
- -(void)createPlaylistWithTitle:(NSString *)title
- {
- Playlist *playlist = [[Playlist alloc] initWithName:title songs:[[NSMutableArray alloc] init]];
- [self.playlists addObject:playlist];
- 
- }
- 
- -(void)deletePlaylist:(Playlist *)playlist
- {
- [self.playlists removeObject:playlist];
- 
- }
 
 
-
-*/
 @end
