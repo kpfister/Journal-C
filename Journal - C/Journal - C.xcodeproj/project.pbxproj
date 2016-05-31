@@ -13,6 +13,7 @@
 		750BC41A1CFE2B9C00B9E53C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750BC4191CFE2B9C00B9E53C /* Assets.xcassets */; };
 		750BC41D1CFE2B9C00B9E53C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750BC41B1CFE2B9C00B9E53C /* LaunchScreen.storyboard */; };
 		750BC4261CFE2CBF00B9E53C /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC4251CFE2CBF00B9E53C /* Entry.m */; };
+		750BC42A1CFE323000B9E53C /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 750BC4291CFE323000B9E53C /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		750BC41E1CFE2B9C00B9E53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		750BC4241CFE2CBF00B9E53C /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		750BC4251CFE2CBF00B9E53C /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		750BC4281CFE323000B9E53C /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		750BC4291CFE323000B9E53C /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		750BC40C1CFE2B9C00B9E53C /* Journal - C */ = {
 			isa = PBXGroup;
 			children = (
+				750BC42B1CFE324C00B9E53C /* Model Controller */,
 				750BC4101CFE2B9C00B9E53C /* AppDelegate.h */,
 				750BC4111CFE2B9C00B9E53C /* AppDelegate.m */,
 				750BC4161CFE2B9C00B9E53C /* Main.storyboard */,
@@ -85,6 +89,15 @@
 				750BC4251CFE2CBF00B9E53C /* Entry.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		750BC42B1CFE324C00B9E53C /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				750BC4281CFE323000B9E53C /* EntryController.h */,
+				750BC4291CFE323000B9E53C /* EntryController.m */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +172,7 @@
 			files = (
 				750BC4261CFE2CBF00B9E53C /* Entry.m in Sources */,
 				750BC4121CFE2B9C00B9E53C /* AppDelegate.m in Sources */,
+				750BC42A1CFE323000B9E53C /* EntryController.m in Sources */,
 				750BC40F1CFE2B9C00B9E53C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
