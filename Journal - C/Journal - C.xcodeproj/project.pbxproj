@@ -110,10 +110,10 @@
 		750BC42F1CFE3EB900B9E53C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				750BC4301CFE485600B9E53C /* EntryDetailViewController.h */,
-				750BC4311CFE485600B9E53C /* EntryDetailViewController.m */,
 				750BC42C1CFE3EA400B9E53C /* EntryListTableViewController.h */,
 				750BC42D1CFE3EA400B9E53C /* EntryListTableViewController.m */,
+				750BC4301CFE485600B9E53C /* EntryDetailViewController.h */,
+				750BC4311CFE485600B9E53C /* EntryDetailViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";

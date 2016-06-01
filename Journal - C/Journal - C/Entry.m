@@ -14,7 +14,7 @@
 
 
 
--(instancetype)initWithName:(NSString *)title bodyText:(NSString *)bodyText
+-(instancetype)initWithName: (NSString *)title bodyText:(NSString *)bodyText
 {
     self = [super init];
     if (self) {

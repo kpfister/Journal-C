@@ -26,20 +26,47 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateWith:self.entry];
     
+    self.titleTextField.delegate = self;
+    self.bodyTextView.delegate = self;
+    [self.view endEditing:YES];
+
 }
 
 #pragma Actions
 
-- (IBAction)saveButtonTapped:(id)sender {
+- (IBAction)saveButtonTapped:(id)sender
+{
+    if (self.entry) {
+        self.entry.title = self.titleTextField.text;
+        self.entry.bodyText = self.bodyTextView.text;
+    } else {
+        Entry *entry = [[Entry alloc]initWithName:self.titleTextField.text bodyText:self.bodyTextView.text];
+        [[EntryController sharedInstance] addEntry:entry];
+    }
+    [self.navigationController popViewControllerAnimated:true];
 }
 
 
 - (IBAction)clearButtonTapped:(id)sender
 {
-    
+    self.titleTextField.text = @"";
+    self.bodyTextView.text = @"";
 }
 
+// Update with View
+
+-(void)updateWith:(Entry *)entry
+{
+    self.titleTextField.text = entry.title;
+    self.bodyTextView.text = entry.bodyText;
+}
+
+
+
+
+//Resign First Responder
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 
 {

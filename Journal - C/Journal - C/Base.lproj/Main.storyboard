@@ -119,6 +119,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VXY-au-dEm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.44154119163004468" green="0.90588235294117647" blue="0.14881124764725803" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
