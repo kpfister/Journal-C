@@ -7,8 +7,18 @@
 //
 
 #import "EntryDetailViewController.h"
+#import "EntryController.h"
+#import "Entry.h"
 
 @interface EntryDetailViewController ()
+
+#pragma Outlets
+//Title
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+
+
+//Body
+@property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
 
 @end
 
@@ -16,14 +26,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma Actions
+
+- (IBAction)saveButtonTapped:(id)sender {
 }
 
+
+- (IBAction)clearButtonTapped:(id)sender
+{
+    
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+
+
+//- (void)updateWith; Entry
 /*
 #pragma mark - Navigation
 

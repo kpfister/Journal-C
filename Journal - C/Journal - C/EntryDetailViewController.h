@@ -10,6 +10,10 @@
 #import "Entry.h"
 
 @interface EntryDetailViewController : UIViewController
+
 @property (strong, nonatomic) Entry *entry;
+
+
+
 
 @end
